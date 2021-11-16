@@ -1,5 +1,6 @@
-import React from 'react'
-import { ProductCard} from '../components/ProductCard';
+import { ProductImage, ProductoTitle, ProductsButtons } from '../components';
+import { ProductCard } from '../components/ProductCard';
+
 
 const product = {
     id: '1',
@@ -9,22 +10,32 @@ const product = {
 export const ShoppingPage = () => {
     return (
         <div>
-            ShoppingPage
+            <h1>Shopping Store</h1>
             <hr />
-            <ProductCard
-                product={product}>
-                <ProductCard.Image />
-                <ProductCard.Title title={'Hola mundo'} />
-                <ProductCard.Buttons />
-            </ProductCard >
 
-            <ProductCard
-                product={product}>
-                <ProductCard.Image />
-                <ProductCard.Title title={'Hola mundo'} />
-                <ProductCard.Buttons />
-            </ProductCard>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap'
+            }}>
 
-        </div >
+                <hr />
+                <ProductCard
+                    product={product}>
+                    <ProductImage />
+                    <ProductoTitle />
+                    <ProductsButtons />
+                </ProductCard >
+
+                <ProductCard
+                    product={product}>
+                    <ProductCard.Image />
+                    <ProductCard.Title title={'Hola mundo'} />
+                    <ProductCard.Buttons />
+                </ProductCard>
+
+            </div >
+        </div>
     )
 }
+

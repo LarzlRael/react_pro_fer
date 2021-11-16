@@ -4,12 +4,10 @@ import {
     Routes,
     Route,
     NavLink,
-    Navigate
 } from "react-router-dom";
 
 import Logo from '../logo.svg';
 import { routes } from './routes';
-import LazyPage1 from '../02-components-patterns/pages/LazyPage1';
 
 
 export const NavigationRoutes = () => {

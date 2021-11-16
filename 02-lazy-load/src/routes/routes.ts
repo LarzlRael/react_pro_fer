@@ -9,7 +9,7 @@ interface Route {
     name: string;
     children?: Route[];
 }
-const LazyPage1 = lazy(() => import(/* webpackChunkName: "LazyPage1" */'../02-components-patterns/pages/LazyPage1'));
+
 const LazyPage2 = lazy(() => import(/* webpackChunkName: "LazyPage2" */'../02-components-patterns/pages/LazyPage2'));
 const LazyPage3 = lazy(() => import(/* webpackChunkName: "LazyPage3" */'../02-components-patterns/pages/LazyPage3'));
 
